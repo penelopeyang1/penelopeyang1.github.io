@@ -89,11 +89,11 @@
 }
 
 .project-button:hover {
-    background-color: black;
+    background-color: #FE88B4;
     color: white;
 }
 
-.project-button.active {
+/* .project-button.active {
     background-color: #0073e6;
     color: white;
-}
+} */
