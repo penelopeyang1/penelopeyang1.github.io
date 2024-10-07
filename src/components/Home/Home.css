@@ -1,0 +1,99 @@
+.about-window {
+    border: 2px solid black;
+    width: 800px;
+    height: 600px;
+    margin-top: 100px;
+    margin-left: 250px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.about-top {
+    border-bottom: 2px solid black;
+    padding: 5px;
+    /* margin-top: 20px; */
+}
+
+.about-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 30px;
+    align-items: center;
+}
+
+.about-window span {
+    display: block;
+    /* Change this to block */
+    height: 2px;
+    width: 375px;
+    /* Set to 100% to span the full width */
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.about-window .profile-image {
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.about-right {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*
+.project-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-nav {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 35px;
+} */
+
+.project-nav {
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 50px;
+    /* Increase height for better button-like appearance */
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-button {
+    /* Make the NavLink fill the entire project-nav area */
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* padding: 0 20px; */
+    /* Adjust horizontal padding */
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #D8D5D6;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.project-button.active {
+    background-color: #0073e6;
+    color: white;
+}
