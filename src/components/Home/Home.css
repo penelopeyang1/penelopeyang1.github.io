@@ -11,7 +11,6 @@
 .about-top {
     border-bottom: 2px solid black;
     padding: 5px;
-    /* margin-top: 20px; */
 }
 
 .about-bottom {
@@ -24,10 +23,8 @@
 
 .about-window span {
     display: block;
-    /* Change this to block */
     height: 2px;
     width: 375px;
-    /* Set to 100% to span the full width */
     background-color: black;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -35,7 +32,7 @@
 
 .about-window .profile-image {
     width: 300px;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 20px;
 }
 
@@ -45,39 +42,22 @@
     flex-direction: column;
     gap: 10px;
 }
-/*
-.project-nav a {
-    text-decoration: none;
-    color: black;
-}
-
-.project-nav {
-    margin-top: 20px;
-    border: 2px solid black;
-    border-radius: 10px;
-    height: 35px;
-} */
 
 .project-nav {
     margin-top: 30px;
     border: 2px solid black;
     border-radius: 10px;
     height: 50px;
-    /* Increase height for better button-like appearance */
     width: 100%;
     overflow: hidden;
 }
 
 .project-button {
-    /* Make the NavLink fill the entire project-nav area */
-    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
-    /* padding: 0 20px; */
-    /* Adjust horizontal padding */
     text-align: center;
     text-decoration: none;
     color: black;
@@ -89,7 +69,7 @@
 }
 
 .project-button:hover {
-    background-color: #FE88B4;
+    background-color: #fe88b3c2;
     color: white;
 }
 
@@ -97,3 +77,60 @@
     background-color: #0073e6;
     color: white;
 } */
+
+@media screen and (max-width: 1450px) {
+    .about-window {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Centers vertically */
+        align-items: center;
+        /* Centers horizontally */
+        margin: auto;
+        width: 80%;
+        /* Set the width as needed */
+        max-width: 800px;
+        /* Limit the width */
+        height: 80vh;
+        /* Make it take 80% of the viewport height */
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .about-window {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about-bottom {
+            display: flex;
+            flex-direction: column;
+            /* Stack items vertically */
+            align-items: flex-start;
+            /* Center items horizontally */
+            gap: 20px;
+            /* Adjust gap between items */
+            padding: 20px;
+        }
+
+        .profile-image {
+            width: 100%;
+            /* Make the image responsive */
+            max-width: 300px;
+            /* Keep a max width for larger screens */
+        }
+
+        .about-right {
+            width: 100%;
+            /* Make sure the right section fills the width */
+            max-width: 400px;
+            /* Keep a max width */
+            text-align: center;
+            /* Optionally center text/content */
+        }
+
+        .project-nav {
+            width: 100%;
+            /* Ensure the project navigation fills the width */
+        }
+}
