@@ -10,11 +10,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* height: 100vh; */
+    /* or a specific height like 800px */
+  /* overflow-y: auto; */
+    /* Allows vertical scrolling when content overflows */
+  /* overflow-x: hidden; */
+    /* Prevent horizontal scrolling */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    height: 100vh;
+    /* Adjust height for smaller screens */
+    overflow-y: auto;
+    /* box-sizing: border-box; */
+    /* padding-top: 60px; */
+  }
+}
+
+.content {
+  padding-top: 60px;
+  /* Space for the navbar */
+  margin: 0;
+  /* Reset margin if needed */
+  /* Other styles for content */
 }
 
 /* @font-face {

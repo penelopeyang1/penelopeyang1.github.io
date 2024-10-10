@@ -17,14 +17,28 @@
 @media screen and (max-width: 1450px) {
     .spotify-widget {
         top: auto;
-        /* Reset the top position */
-        bottom: -170px;
-        /* Position at the bottom */
-        left: 200px;
-        /* Adjust the right padding */
+        bottom: -180px;
+        left: 50%;
         width: 300px;
-        /* Set a fixed width */
         height: 350px;
-        /* Adjust the height */
+        /* transform: translateX(-130%); */
+        transform: translateX(-130%);
+        /* display: flex;
+        justify-content: center; */
     }
 }
+
+@media screen and (max-width: 950px) {
+    .spotify-widget {
+        top: auto;
+        bottom: -180px;
+        left: 45%;
+        width: 300px;
+        height: 350px;
+        /* transform: translateX(-130%); */
+        transform: translateX(-100%);
+        /* display: flex;
+        justify-content: center; */
+    }
+}
+
