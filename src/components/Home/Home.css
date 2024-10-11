@@ -2,10 +2,10 @@
     border: 2px solid black;
     width: 800px;
     height: 600px;
-    margin-top: 100px;
+    margin-top: 35px;
     margin-left: 250px;
     border-radius: 20px;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .about-top {
@@ -21,7 +21,7 @@
     align-items: center;
 }
 
-.about-window span {
+.about-window .divider {
     display: block;
     height: 2px;
     width: 375px;
@@ -43,16 +43,16 @@
     gap: 10px;
 }
 
-.project-nav {
+/* .project-nav {
     margin-top: 30px;
     border: 2px solid black;
     border-radius: 10px;
     height: 50px;
     width: 100%;
     overflow: hidden;
-}
+} */
 
-.project-button {
+/* .project-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,12 +71,101 @@
 .project-button:hover {
     background-color: #fe88b3c2;
     color: white;
+} */
+
+.project-nav {
+    text-decoration: none;
 }
 
-/* .project-button.active {
-    background-color: #0073e6;
-    color: white;
-} */
+.project-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #FE86B3;
+    box-shadow: 0 0 0 2px #FE86B3;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    margin-top: 15px;
+}
+
+.project-button svg {
+    position: absolute;
+    width: 24px;
+    fill: #FE86B3;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-button .arr-1 {
+    right: 16px;
+}
+
+.project-button .arr-2 {
+    left: -25%;
+}
+
+.project-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #FE86B3;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-button .text {
+    /* text-decoration: none; */
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+}
+
+.project-button:hover .arr-1 {
+    right: -25%;
+}
+
+.project-button:hover .arr-2 {
+    left: 16px;
+}
+
+.project-button:hover .text {
+    transform: translateX(12px);
+}
+
+.project-button:hover svg {
+    fill: #212121;
+}
+
+.project-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px #FE86B3;
+}
+
+.project-button:hover .circle {
+    width: 280px;
+    height: 250px;
+    opacity: 1;
+}
 
 @media screen and (max-width: 1450px) {
     .about-window {
@@ -102,7 +191,7 @@
     .about-window {
             display: flex;
             flex-direction: column;
-            margin-top: 300px;
+            /* margin-top: 300px; */
         }
 
         .about-bottom {
