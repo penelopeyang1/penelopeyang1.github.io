@@ -27,7 +27,7 @@ body {
       background-size: 300% 300%;
 }
 
-@keyframes moveCircles {
+/* @keyframes moveCircles {
   0% {
     background-position: 0% 0%, 50% 50%, 100% 100%;
   }
@@ -59,7 +59,7 @@ body {
       radial-gradient(circle at 50% 50%, #FF69B4, transparent),
       radial-gradient(circle at 50% 50%, #00FA9A, transparent);
   }
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
