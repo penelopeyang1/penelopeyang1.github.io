@@ -1,27 +1,30 @@
-/* Apple-like bar at the top of the page */
 .desktop-bar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 25px;
-    background-color: #f8f8f8;
-    color: #000;
+    /* background-color: #f8f8f8; */
+    /* background-color: #000; */
+    background-color: rgba(50, 37, 37, 0.317);
+    backdrop-filter: blur(10px);
+    /* color: #000; */
+    color: #f8f8f8;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
     font-family: "SF Pro Display", sans-serif;
-    /* Use your custom font */
     font-size: 14px;
     z-index: 9999;
-    border-bottom: 1px solid #e0e0e0;
+    /* border-bottom: 1px solid #e0e0e0; */
 }
 
 /* Left side of the bar (with Apple logo and menu items) */
 .desktop-bar-left span {
     margin-right: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: default;
 }
 
 .desktop-bar-left span:first-child {

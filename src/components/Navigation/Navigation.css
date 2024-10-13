@@ -27,7 +27,7 @@ li {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: 500;
     display: block;
@@ -37,6 +37,19 @@ nav a {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav a:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    /* White glow effect */
+    transform: translateY(-5px);
+    /* Slight upward movement */
+}
+
+nav a:hover img {
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+    /* Glowing effect for icons */
 }
 
 .about-icon {

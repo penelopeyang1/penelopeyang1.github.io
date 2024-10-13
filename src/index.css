@@ -5,9 +5,10 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+  font-family: "SF Pro Display", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -16,50 +17,9 @@ body {
   /* overflow-y: auto; */
     /* Allows vertical scrolling when content overflows */
   /* overflow-x: hidden; */
-    /* Prevent horizontal scrolling */
-    height: 100vh;
-      overflow: hidden;
-      background: radial-gradient(circle at 50% 50%, #00FFFF, transparent),
-        radial-gradient(circle at 50% 50%, #FF00FF, transparent),
-        radial-gradient(circle at 50% 50%, #00FF00, transparent);
-      animation: moveCircles 10s ease-in-out infinite alternate,
-        changeColors 15s ease-in-out infinite alternate;
-      background-size: 300% 300%;
+  /* overflow: hidden; */
+  background-color: black;
 }
-
-/* @keyframes moveCircles {
-  0% {
-    background-position: 0% 0%, 50% 50%, 100% 100%;
-  }
-
-  50% {
-    background-position: 100% 0%, 0% 100%, 50% 50%;
-  }
-
-  100% {
-    background-position: 50% 100%, 100% 50%, 0% 0%;
-  }
-}
-
-@keyframes changeColors {
-  0% {
-    background: radial-gradient(circle at 50% 50%, #00FFFF, transparent),
-      radial-gradient(circle at 50% 50%, #FF00FF, transparent),
-      radial-gradient(circle at 50% 50%, #00FF00, transparent);
-  }
-
-  50% {
-    background: radial-gradient(circle at 50% 50%, #FF6347, transparent),
-      radial-gradient(circle at 50% 50%, #FFD700, transparent),
-      radial-gradient(circle at 50% 50%, #1E90FF, transparent);
-  }
-
-  100% {
-    background: radial-gradient(circle at 50% 50%, #9400D3, transparent),
-      radial-gradient(circle at 50% 50%, #FF69B4, transparent),
-      radial-gradient(circle at 50% 50%, #00FA9A, transparent);
-  }
-} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

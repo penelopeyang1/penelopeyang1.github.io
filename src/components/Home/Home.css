@@ -1,16 +1,57 @@
 .about-window {
-    border: 2px solid black;
+    box-sizing: border-box;
     width: 800px;
     height: 600px;
-    margin-top: 35px;
     margin-left: 250px;
-    border-radius: 20px;
-    background-color: #ffffff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #2828289b;
+    color: white;
 }
 
 .about-top {
-    border-bottom: 2px solid black;
-    padding: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-sizing: border-box;
+    padding: 7px;
+    background-color: #282828d6;
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.window-buttons {
+    display: flex;
+    gap: 8px;
+    margin-left: 10px;
+}
+
+.about-top h4 {
+    color: white;
+    font-weight: 500;
+}
+
+.window-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff5f57;
+    /* Close (red) */
+}
+
+.window-button:nth-child(2) {
+    background-color: #ffbd2e;
+    /* Minimize (yellow) */
+}
+
+.window-button:nth-child(3) {
+    background-color: #28c840;
+    /* Fullscreen (green) */
 }
 
 .about-bottom {
@@ -25,14 +66,14 @@
     display: block;
     height: 2px;
     width: 375px;
-    background-color: black;
+    background-color: #FE86B3;
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
 .about-window .profile-image {
     width: 300px;
-    border: 3px solid black;
+    /* border: 2px solid white; */
     border-radius: 20px;
 }
 
@@ -41,6 +82,15 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 35px;
+}
+
+.about-right h1 {
+    font-weight: 600;
+}
+
+.about-right h4 {
+    font-weight: 500;
 }
 
 /* .project-nav {

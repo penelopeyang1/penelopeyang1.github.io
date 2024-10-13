@@ -19,7 +19,7 @@ function Navigation() {
                 </li>
                 <li>
                     <NavLink to="/contact" activeClassName="active-link">
-                        <img src='../black-star.png' alt="Connect Icon" className="connect-icon"></img>
+                        <img src='../light-phone.png' alt="Connect Icon" className="connect-icon"></img>
                         Connect
                     </NavLink>
                 </li>
