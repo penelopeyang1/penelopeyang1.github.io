@@ -20,6 +20,12 @@
     /* border-bottom: 1px solid #e0e0e0; */
 }
 
+.desktop-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 /* Left side of the bar (with Apple logo and menu items) */
 .desktop-bar-left span {
     margin-right: 10px;
@@ -36,8 +42,20 @@
 .desktop-bar-right {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .desktop-bar-right span {
     margin-left: 10px;
+}
+
+.bar-icon  {
+    font-size: 21px;
+    display: flex;
+
+}
+
+.apple {
+    font-size: 18px;
+    margin-right: 8px;
 }

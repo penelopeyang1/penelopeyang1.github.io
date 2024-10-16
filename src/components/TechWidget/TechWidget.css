@@ -1,0 +1,49 @@
+.tech-box {
+    position: fixed;
+    top: 400px;
+    right: 50px;
+    z-index: 100;
+    width: 25%;
+    height: 210px;
+    border-radius: 20px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #2828289b;
+    /* backdrop-filter: blur(10px); */
+}
+
+.tech-title {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.tech-icon {
+    width: 25px;
+}
+
+.tech-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.tech-list img {
+    width: 40px;
+    aspect-ratio: 1;
+    transition: .5s;
+    cursor: pointer;
+    -webkit-mask:
+        linear-gradient(135deg, #000c 40%, #000, #000c 60%) 100% 100%/250% 250%;
+}
+
+img:hover {
+    -webkit-mask-position: 0 0;
+}
