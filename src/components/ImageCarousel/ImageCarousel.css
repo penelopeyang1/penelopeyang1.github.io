@@ -1,0 +1,67 @@
+.carousel-container {
+    padding: 1rem 0;
+    width: 700px;
+}
+
+.tranding-slider {
+    height: 20rem;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.tranding-slide {
+    width: 15rem;
+    height: 18rem;
+    position: relative;
+}
+
+.tranding-slide .tranding-slide-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    /* width: 300px; */
+}
+
+.tranding-slider-control {
+    position: absolute;
+    top: 50%;
+    bottom: 0.5rem;
+    left: 0;
+    /* Adjust as needed for positioning */
+    right: 0;
+    /* Adjust as needed for positioning */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    /* Center vertically */
+}
+
+.slider-arrow {
+    cursor: pointer;
+    margin: 0 0.25rem;
+    /* Reduced margin */
+    color: var(--primary);
+    font-size: 1rem;
+    /* Smaller font size for arrows */
+    width: 2rem;
+    /* Set width for consistent size */
+    height: 2rem;
+    /* Set height for consistent size */
+    display: flex;
+    /* Flex for centering icon */
+    align-items: center;
+    /* Center icon vertically */
+    justify-content: center;
+    /* Center icon horizontally */
+}
+
+.slider-arrow:hover {
+    opacity: 0.8;
+    /* Optional: add hover effect */
+}
+
+.swiper-pagination {
+    bottom: 0.25rem;
+}

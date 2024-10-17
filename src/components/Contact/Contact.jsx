@@ -1,7 +1,67 @@
+import { useState } from 'react';
 import './Contact.css';
 import { MdOutlineMail } from "react-icons/md";
+import ImageCarousel from '../ImageCarousel';
+
+const Carousel = ({ images }) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+    };
+
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+    };
+
+    return (
+        <div className="carousel">
+            <div
+                className="carousel-track"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+                {images.map((image, index) => (
+                    <div className="carousel-item" key={index}>
+                        <img src={image} alt={`slide-${index}`} />
+                    </div>
+                ))}
+            </div>
+            <button className="carousel-btn prev" onClick={handlePrev}>
+                &#10094;
+            </button>
+            <button className="carousel-btn next" onClick={handleNext}>
+                &#10095;
+            </button>
+        </div>
+    );
+};
 
 function Contact() {
+    const images = [
+        '/images/lake.png',
+        '/images/odyssea.png',
+        '/images/cactus.png',
+        '/images/celeste.png',
+        '/images/epcot.png',
+        '/images/nyc-cam.png',
+        '/images/two-boba.png',
+        '/images/professional.png',
+        '/images/val.png',
+        '/images/zeus.png',
+        '/images/sweets.png',
+        '/images/tae.png',
+        '/images/acnh.png',
+        '/images/boba.png',
+        '/images/bruce.png',
+        '/images/keeb.png',
+        '/images/robot-boba.png',
+        '/images/pluto.png',
+    ];
+
     return (
         <div className="connect-window">
             <div className="about-top">
@@ -14,7 +74,9 @@ function Contact() {
             </div>
             <div className="about-window">
                 <div className="connect-body">
-                    <h4 className='connect-info'>Born and raised in Minnesota, I’m passionate about connecting with people from all walks of life. I’m eager to move to a new city and grow my network. With a warm, bubbly personality, I genuinely enjoy building new friendships and professional relationships. Whether you’re looking to hire me or seeking a friendly collaborator, I’m all in! As an avid hobby collector, I'm always eager to learn new things. To start, I love animals, reading, gaming, working out, and traveling—so there’s always something to chat about. Let’s connect!</h4>
+                    {/* <Carousel images={images} /> */}
+                    <ImageCarousel images={images} />
+                    <h4 className='connect-info'>Born and raised in Minnesota, I’m passionate about connecting with people from all walks of life. I’m eager to move to a new state and grow my network. With a warm, bubbly personality, I genuinely enjoy building new friendships and professional relationships. Whether you’re looking to hire me or seeking a friendly collaborator, I’m all in! As an avid hobby collector, I'm always eager to learn new things. To start, I love animals, reading, gaming, working out, and traveling—so there’s always something to chat about. Let’s connect!</h4>
                 </div>
                 <div className="connect-bottom">
                     <ul class="example-2">
