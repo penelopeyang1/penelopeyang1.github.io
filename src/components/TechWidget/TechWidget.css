@@ -1,6 +1,6 @@
 .tech-box {
     position: fixed;
-    top: 400px;
+    top: 530px;
     right: 50px;
     z-index: 100;
     width: 25%;
@@ -38,7 +38,7 @@
 .tech-list img {
     width: 40px;
     aspect-ratio: 1;
-    transition: .5s;
+    transition: .8s;
     cursor: pointer;
     -webkit-mask:
         linear-gradient(135deg, #000c 40%, #000, #000c 60%) 100% 100%/250% 250%;

@@ -8,7 +8,7 @@ function Navigation() {
                 <li>
                     <NavLink to="/" activeClassName="active-link">
                         <img src='../pixel-penelope.png' alt="About Icon" className="about-icon"></img>
-                        About
+                        Welcome
                     </NavLink>
                 </li>
                 <li>

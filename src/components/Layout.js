@@ -24,6 +24,7 @@ function Layout() {
             {/* Spotify Embed */}
             <div className="spotify-widget">
                 <iframe src="https://open.spotify.com/embed/playlist/1hyGj8OtxqJMvtBIGJfj3Z?utm_source=generator&theme=0" title="spotify-widget" width="25%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <h5 className="music-player">Music Player</h5>
             </div>
             <TechWidget />
         </>

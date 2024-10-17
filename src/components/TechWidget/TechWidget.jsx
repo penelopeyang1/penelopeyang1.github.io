@@ -23,7 +23,7 @@ function TechWidget() {
                     <img className='tech-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
                     <img className='tech-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
                 </div>
-                <h4 className='tech-title'>Technologies</h4>
+                <h5 className='tech-title'>Technologies</h5>
             </div>
         </>
     );
