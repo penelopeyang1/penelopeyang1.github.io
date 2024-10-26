@@ -26,7 +26,7 @@
 .tranding-slider-control {
     position: absolute;
     top: 50%;
-    bottom: 0.5rem;
+    bottom: -1.5rem;
     left: 0;
     /* Adjust as needed for positioning */
     right: 0;
@@ -63,5 +63,5 @@
 }
 
 .swiper-pagination {
-    bottom: 0.25rem;
+    bottom: -2rem;
 }
