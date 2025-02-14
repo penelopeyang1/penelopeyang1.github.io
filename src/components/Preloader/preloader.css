@@ -1,0 +1,25 @@
+.preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .hello-text {
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    fill: white;
+    opacity: 0;
+  }
+  
+  .logo-shape circle {
+    fill: white;
+    display: none; /* Initially hidden */
+  }
+  

@@ -32,7 +32,7 @@ function ShaderBackground() {
                 uStrength={3}
                 uColorBlend={0.5}
                 brightness={2}
-                grain="on"
+                grain="off"
                 grainBlending={0.2}
             />
         </ShaderGradientCanvas>

@@ -65,10 +65,10 @@ function Contact() {
     return (
         <div className="connect-window">
             <div className="about-top">
-                <div class="window-buttons">
-                    <span class="window-button"></span>
-                    <span class="window-button"></span>
-                    <span class="window-button"></span>
+                <div className="window-buttons">
+                    <span className="window-button"></span>
+                    <span className="window-button"></span>
+                    <span className="window-button"></span>
                 </div>
                 <h4>Let's Connect!</h4>
             </div>
@@ -79,8 +79,8 @@ function Contact() {
                     <h4 className='connect-info'>Born and raised in Minnesota, I’m passionate about connecting with people from all walks of life. I’m eager to move to a new state and grow my network. With a warm, bubbly personality, I genuinely enjoy building new friendships and professional relationships. Whether you’re looking to hire me or seeking a friendly collaborator, I’m all in! As an avid hobby collector, I'm always eager to learn new things. To start, I love animals, reading, gaming, working out, and traveling—so there’s always something to chat about. Let’s connect!</h4>
                 </div>
                 <div className="connect-bottom">
-                    <ul class="example-2">
-                        <li class="icon-content">
+                    <ul className="example-2">
+                        <li className="icon-content">
                             <a
                                 href="https://www.linkedin.com/in/penelope-yang/"
                                 aria-label="LinkedIn"
@@ -88,13 +88,13 @@ function Contact() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <div class="filled"></div>
+                                <div className="filled"></div>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="16"
                                     height="16"
                                     fill="currentColor"
-                                    class="bi bi-linkedin"
+                                    className="bi bi-linkedin"
                                     viewBox="0 0 16 16"
                                     xmlSpace="preserve"
                                 >
@@ -104,22 +104,22 @@ function Contact() {
                                     ></path>
                                 </svg>
                             </a>
-                            <div class="tooltip">LinkedIn</div>
+                            <div className="tooltip">LinkedIn</div>
                         </li>
-                        <li class="icon-content">
+                        <li className="icon-content">
                             <a
                                 href="https://github.com/penelopeyang1"
                                 aria-label="GitHub"
                                 data-social="github"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                <div class="filled"></div>
+                                <div className="filled"></div>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="16"
                                     height="16"
                                     fill="currentColor"
-                                    class="bi bi-github"
+                                    className="bi bi-github"
                                     viewBox="0 0 16 16"
                                     xmlSpace="preserve"
                                 >
@@ -129,17 +129,17 @@ function Contact() {
                                     ></path>
                                 </svg>
                             </a>
-                            <div class="tooltip">GitHub</div>
+                            <div className="tooltip">GitHub</div>
                         </li>
-                        <li class="icon-content">
+                        <li className="icon-content">
                             <a href="/Penelope-Yang-Resume.pdf" aria-label="Resume" data-social="resume" target="_blank" rel="noopener noreferrer" className='Resume'>
-                                <div class="filled"></div>
+                                <div className="filled"></div>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="16"
                                     height="16"
                                     fill="currentColor"
-                                    class="bi bi-file-earmark-text"
+                                    className="bi bi-file-earmark-text"
                                     viewBox="0 0 16 16"
                                     xmlSpace="preserve"
                                 >
@@ -147,7 +147,7 @@ function Contact() {
                                     <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zM13 4.5L9.5 1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z" />
                                 </svg>
                             </a>
-                            <div class="tooltip">Resume</div>
+                            <div className="tooltip">Resume</div>
                         </li>
                     </ul>
                     <div className="email">

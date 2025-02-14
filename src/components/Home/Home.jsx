@@ -7,10 +7,10 @@ function Home() {
             <div className="home-left">
                 <div className="full-about">
                     <div className="about-top">
-                        <div class="window-buttons">
-                            <span class="window-button"></span>
-                            <span class="window-button"></span>
-                            <span class="window-button"></span>
+                        <div className="window-buttons">
+                            <span className="window-button"></span>
+                            <span className="window-button"></span>
+                            <span className="window-button"></span>
                         </div>
                         <h4>Welcome to My Portfolio</h4>
                     </div>
@@ -29,7 +29,8 @@ function Home() {
                                 {/* <div className='project-nav'>
                                     <NavLink to="/projects" activeClassName="active" className="project-button">Check out my projects 😊</NavLink>
                                 </div> */}
-                                <NavLink to="/projects" activeClassName="active" className="project-nav">
+                                {/* <NavLink to="/projects" activeClassName="active" className="project-nav"> */}
+                                <NavLink to="/projects" className={({ isActive }) => isActive ? "active-link" : ""}>
                                     <button className="project-button">
                                         <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
